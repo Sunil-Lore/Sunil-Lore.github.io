@@ -1,0 +1,136 @@
+/* HERO section CSS start */
+
+#hero_anchor{
+    color:#1A3E4C;
+}
+
+#hero_button:hover{
+    color:#1A3E4C;
+    border:#1A3E4C 3px solid;
+}
+/* HERO section CSS end */
+
+.box_highlight{
+    border:1px solid #E4F1F6;
+}
+
+
+
+.highlight_portfolio div:hover{
+    border:2px solid #66B032;
+}
+
+.services div{
+  border: 2px solid #E4F1F6;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.services div:hover{
+    border: 2px solid #E4F1F6;
+    background-color:transparent;
+}
+.fixed {
+    position: fixed;
+    right: 5px;
+    bottom: 20%;
+    font-size: 36px;
+    color: black;
+    background-color: transparent;
+    display:none;
+    z-index:99;
+  }
+  
+  .chip {
+    display: inline-block;
+    padding: 0 30px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    display:none;
+  }
+  
+  .chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+  
+  .closebtn {
+    padding-left: 10px;
+    color: #888;
+    font-weight: bold;
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .closebtn:hover {
+    color: #000;
+  }
+
+  #skill_button{
+    color:#1A3E4C;
+}
+  #skill_button:hover{
+    color:#1A3E4C;
+    border:#1A3E4C 3px solid;
+}
+.social_link:hover{
+  color:#66B032;
+}
+
+.p0-box {
+  color: #092834;
+  background-color: #E4F1F6;
+  -webkit-box-shadow: 1px 1px 1px #67AFCB;
+          box-shadow: 1px 1px 1px #67AFCB;
+}
+
+.p0-box a:link, .p0-box a:visited, .p0-box a:hover, .p0-box a:active {
+  color: #092834;
+  background-color: #FFFFDB;
+}
+.seoelement {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.seoelement td,
+.seoelement th {
+  border: 1px solid #67afcb;
+  padding: 14px 8px;
+  text-align: left;
+}
+
+.seoelement td a:link, .seoelement td a:visited, .seoelement td a:hover, .seoelement td a:active,
+.seoelement th a:link,
+.seoelement th a:visited,
+.seoelement th a:hover,
+.seoelement th a:active {
+  text-decoration: none;
+}
+
+.seoelement tr:nth-child(even) {
+  background-color: #e4f1f6;
+}
+
+.seoelement tr:hover {
+  background-color: #347b98;
+}
+
+.seoelement th {
+  background-color: #092834;
+  color: white;
+}
+
+.seoelement .th2 {
+  background-color: #347b98;
+  color: white;
+}
