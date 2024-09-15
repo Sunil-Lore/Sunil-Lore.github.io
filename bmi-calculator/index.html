@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Sunil-Lore/getcss-lite@getcss-light-0.1.0-alpha-02/dist/css/getcss-lite.min.css" /> 
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/color.css" />
+    <title>Best BMI calculator</title>
+</head>
+<body>
+    <div class="container-lg vh">
+        <nav>
+            <a href="https://www.getcss.org">Home</a>
+        </nav>
+        <main class="fx-perfect-center p-y-10-pr">
+            <div class="bmibox">
+                <div class="row fx-wrap">
+                    <div class="col-md-6 p-2-px">
+                        <p class="txt-center"><b>Check your BMI:</b></p>
+                        <br />
+                        <form action="#" class="m-2-px txt-center" onsubmit="calculate(); return false;">
+                            <label for="height">Height (cm):</label><br />
+                            <input type="text" id="height" name="height" size="10"><br /><br />
+                            <label for="weight">Weight (kg):</label><br>
+                            <input type="text" id="weight" name="weight" size="10"><br /><br />
+                            <input type="submit" value="Calculate">
+                            <input type="reset" value="Reset" onclick="referesh()" >
+                          </form>
+                    </div> 
+                    <div class="col-md-6 resultbox p-10-px">
+                        <p id="resultarea" class="txt-center"></p>
+                    </div>
+                </div>
 
+                
+            </div>
+        </main>
+        <footer>
+            <p class="txt-center">
+                <a href="https://sunil-lore.github.io/">&copy;sunil-lore.github.io</a>
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        function calculate() {
+            let heightInput = document.getElementById("height");
+            let weightInput = document.getElementById("weight");
+            let heightInCm = heightInput.value;
+            let heightInM = heightInCm/100;
+            let weight = weightInput.value;
+            let bmi = weight/(heightInM*heightInM);
+            if(bmi<18.5){
+                    $("#resultarea").fadeIn(3000);
+                    $("#resultarea").css("background-color","yellow");
+                    $("#resultarea").text("Underweight");
+            } else if(bmi<24.9){
+                    $("#resultarea").fadeIn(3000);
+                    $("#resultarea").css("background-color","green");
+                    $("#resultarea").text("Optimum");
+            } else if(bmi<29.9){
+                    $("#resultarea").fadeIn(3000);
+                    $("#resultarea").css("background-color","yellow");
+                    $("#resultarea").text("Overweight");
+            } else{
+                    $("#resultarea").fadeIn(3000);
+                    $("#resultarea").css("background-color","maroon");
+                    $("#resultarea").text("Obesity");
+            }
+        }
+        function referesh(){
+            $("#resultarea").css("background-color", "silver").fadeOut(2000);
+        }
+    </script>
+</body>
+</html>
