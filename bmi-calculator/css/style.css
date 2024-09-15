@@ -1,1 +1,102 @@
+* {
+    box-sizing: border-box;
+  }
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  body {
+      font-family: "ABeeZee", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: large;
+      background-color: var(--primary-color);
+    }
+    .vh {
+        height: 100%;
+    }
+    nav {
+        background-color: var(--secondary-color) ;
+        color: var(--light-color);
+        overflow: hidden;
+    }
+    nav a {
+        color: var(--light-color);
+        padding:20px;
+        display:block;
+        float: left; 
+        text-decoration: none;       
+    }
+    nav a:hover {
+        background-color: var(--light-color);
+        color: var(--secondary-color);
+    }
+    footer {
+        background-color: var(--secondary-color) ;
+        color: var(--light-color);
+        overflow: hidden;
+        margin-top: 20px;
+    }
+    footer a {
+        color: var(--light-color);
+        padding:20px;
+        display:inline-block;
+        text-decoration: none;       
+    }
+    footer a:hover {
+        background-color: var(--light-color);
+        color: var(--secondary-color);
+    }
+    .bmibox {
+        border: 2px solid var(--secondary-color);
+        border-radius: 10px;
+        background-color: var(--light-color);
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+    }
+    li {
+        padding:10px;
+        display: block;
+    }
+    #underweight {
+        background-color: var(--underweight-color);
+        opacity:0.1;
+    }
+    #overweight {
+        background-color: var(--overweight-color);
+        opacity:0.1;
+    }
+    #optimum {
+        background-color: var(--optimum-color);
+        opacity:0.1;
+    }
+    #obesity {
+        background-color: var(--obesity-color);
+        opacity:0.1;
+    }
+    .resultbox {
+        border: none;
+        border-radius: 10px;
+        margin: 5px;
+    }
+    #resultarea {
+        padding:10px;
+        display:none;
+    }
+    input[type="text"] {
+        padding: 4px 7px;
+        border: 1px solid var(--dark-color);
+        border-radius: 10px;
+    }
+    input[type="submit"], input[type="reset"] {
+        padding: 3px 6px;
+        background-color: var(--primary-color);
+        border-radius: 10px;
+        border: none;
+    }
+
 
